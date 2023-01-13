@@ -5,11 +5,13 @@ import ScrollToTop from "pages/ScrollToTop"
 import NotFound from "pages/Error/NotFound";
 import Sign from "pages/Sign"
 import Home from "pages/Home";
+import Subscription from "pages/Subscription";
 
 import Toast from "components/shared/Toast";
 
 export const pages = [
 	{ path: "/", component: Home },
+	{ path: "/subscription", component: Subscription },
 ];
 
 export default function Pages()
