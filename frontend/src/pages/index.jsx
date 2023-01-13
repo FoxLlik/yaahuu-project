@@ -8,10 +8,11 @@ import Home from "pages/Home";
 import Subscription from "pages/Subscription";
 
 import Toast from "components/shared/Toast";
+import LoginRequired from "components/LoginRequired";
 
 export const pages = [
-	{ path: "/", component: Home },
-	{ path: "/subscription", component: Subscription },
+	{ path: "/", Component: Home, checkLogin: true },
+	{ path: "/subscription", Component: Subscription, checkLogin: false },
 ];
 
 export default function Pages()
@@ -22,11 +23,18 @@ export default function Pages()
             <ScrollToTop />
             <Toast />
             <Routes>
+                {pages.map(({ Component, path, checkLogin }) => {
 
-                {pages.map(({ component, path }) => {
-                    const Component = component;
                     return (
-                        <Route key={path} element={<Component />} path={path} />
+                        <Route
+                            key={path}
+                            path={path}
+                            element={
+                                checkLogin
+                                ? <LoginRequired><Component /></LoginRequired>
+                                : <Component />
+                            }
+                        />
                     );
                 })}
 
