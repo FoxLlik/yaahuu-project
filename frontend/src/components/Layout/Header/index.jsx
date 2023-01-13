@@ -13,8 +13,6 @@ export default function Header()
 
     const { user } = useContext(AuthContext)
 
-    console.log(user)
-
     let location = useLocation();
 
     return Object.keys(user).length === 0 ? <HeaderNotLogged /> : <HeaderLogged />;

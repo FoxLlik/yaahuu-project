@@ -39,8 +39,6 @@ export default function PageLogin({ className="" })
     const userApi = useApi().user
     const { setUser, user } = useContext(AuthContext)
 
-    console.log('user', user)
-
     const { signIn } = useGoogleLogin({
         onSuccess,
         onFailure,
