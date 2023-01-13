@@ -7,8 +7,6 @@ export default function useApi(isDisplay=true)
 {
     const source = axios.CancelToken.source();
 
-    console.log('process.env.REACT_APP_SERVER_URL', process.env.REACT_APP_SERVER_URL)
-
     const instance = axios.create(
         {
             baseURL: process.env.REACT_APP_SERVER_URL,
