@@ -1,5 +1,5 @@
 
-import imagePng from 'images/hero-right-3.png'
+import imagePng from 'images/hero-right-4.png'
 import ButtonPrimary from "components/shared/Button/ButtonPrimary";
 import HeroSearchForm from 'components/HeroSearchForm/HeroSearchForm';
 
