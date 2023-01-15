@@ -17,19 +17,7 @@ import ButtonPrimary from "components/shared/Button/ButtonPrimary";
 import facebookSvg from "images/Facebook.svg"
 import googleSvg from "images/Google.svg";
 
-// const loginSocials = [
-// 	{
-// 		name: "Facebook - ээр нэвтрэх",
-// 		icon: facebookSvg,
-// 	},
-// 	{
-// 		name: "Google - ээр нэвтрэх",
-// 		icon: googleSvg,
-//         onclickFunc: 'handleSignInGoogle()'
-// 	},
-// ];
-
-export default function PageLogin({ className="" })
+export default function Login({ className="" })
 {
 
     const navigate = useNavigate()
@@ -207,7 +195,7 @@ export default function PageLogin({ className="" })
                     {/* ==== */}
                     <span className="block text-center text-neutral-700 dark:text-neutral-300">
                         Шинэ хэрэглэгч болох? {` `}
-                        <Link to="/signup" className="text-green-600">
+                        <Link to="/sign/up" className="text-green-600">
                             Бүртгүүлэх
                         </Link>
                     </span>
