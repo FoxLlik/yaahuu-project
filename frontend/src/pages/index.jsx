@@ -11,7 +11,7 @@ import Toast from "components/shared/Toast";
 import LoginRequired from "components/LoginRequired";
 
 export const pages = [
-	{ path: "/", Component: Home, checkLogin: true },
+	{ path: "/", Component: Home, checkLogin: false },
 	{ path: "/subscription", Component: Subscription, checkLogin: false },
 ];
 
