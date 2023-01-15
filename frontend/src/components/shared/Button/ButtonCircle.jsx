@@ -1,5 +1,5 @@
 import React from "react";
-import twFocusClass from "../../../utils/twFocusClass";
+import { twFocusClass } from "utils/style";
 
 const ButtonCircle = ({ className = " ", size = " w-9 h-9 ", ...args }) => {
 	return (
