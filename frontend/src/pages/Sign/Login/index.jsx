@@ -25,7 +25,7 @@ export default function Login({ className="" })
     const { fetchData } = useLoader({})
 
     const userApi = useApi().user
-    const { setUser, user } = useContext(AuthContext)
+    const { setUser } = useContext(AuthContext)
 
     const { signIn } = useGoogleLogin({
         onSuccess,
