@@ -14,7 +14,7 @@ export default function Rooms({ className = "" })
     return (
 		<div className={`nc-PageSearch  ${className}`} data-nc-id="PageSearch">
 			<Helmet>
-				<title>Search || Ciscryp NFT Template</title>
+				<title>13 модны покер || Yaahuu</title>
 			</Helmet>
 			<div className="container px-4">
 				{/* SECTION HERO */}
