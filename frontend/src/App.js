@@ -1,5 +1,8 @@
 
 import AuthState from "context/auth/authState";
+import SocketState from "context/socket/socketState";
+import GameState from "context/card13/game/gameState";
+import PlayerState from "context/card13/player/playerState";
 
 import Layout from "components/Layout";
 
@@ -9,9 +12,15 @@ function App()
 {
     return (
         <AuthState>
-            <Layout>
-                <Pages />
-            </Layout>
+            <SocketState>
+                <GameState>
+                    <PlayerState>
+                        <Layout>
+                            <Pages />
+                        </Layout>
+                    </PlayerState>
+                </GameState>
+            </SocketState>
         </AuthState>
     );
 }
